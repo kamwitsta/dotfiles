@@ -1,0 +1,12 @@
+# no bell on tab completion
+set bell-style none
+
+# history search
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+
+set show-all-if-ambiguous on
+
+# ctrl-arrows to jump one word
+";5D": backward-word
+";5C": forward-word

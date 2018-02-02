@@ -1,0 +1,51 @@
+### LOOK
+
+# lower brightness (standard 1)
+xgamma -gamma 0.8 &
+
+# 3d not synchronized to monitor refresh rate
+#export vblank_mode=0 &
+
+# background
+feh --bg-scale /home/kamil/.wallpaper.jpg &
+
+# dropbox
+dropbox start &
+
+# dzen
+~/.dzen/dzen.sh &
+
+
+### USABILITY
+
+# disable touchpad when typing
+syndaemon -i 1 -t &
+
+# sound off
+amixer -q set Master off &
+
+# notifications
+#/usr/lib/notification-daemon-1.0/notification-daemon &
+
+# SyncTex
+#/home/kamil/conf/scripts/sync-evince2vim.zsh &
+
+# compose key
+export GTK_IM_MODULE=uim
+export QT_IM_MODULE=uim
+export XMODIFIERS=@im=uim
+im-config -n uim
+
+### APPS
+
+clipit --no-icon &
+
+export SAL_USE_VCLPLUGIN=gtk	# fix OO focus issues
+
+
+# xmonad
+# exec ck-launch-session xmonad
+# exec ck-launch-session gnome-session
+exec xmonad
+# exec fluxbox
+# exec gnome-session

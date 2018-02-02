@@ -1,0 +1,64 @@
+// ### A LINGUIST'S XKB KEYBOARD
+// changelog:
+//	2009.11.07		Removed "KP_" from the keypad: fixed Vim but still TODO in Chrome
+					Cyrillic:
+						Switched guillemots and apostrophes
+						Fixed Ctrl-x
+						Added Latin l under RAlt
+//	2009.07.06		First public version
+
+
+// 1. What is it?
+// 2. How do I install it?
+// 3. How do I use it?
+// 4. How do I adapt to my needs?
+
+
+
+// ### 1. What is it?
+// It's something I've been doing for my own use for some time, and finally decided to share. It's a mixture of different ideas I have about what a keyboard should work like to be comfortable in a linguist's work. If you're not a linguist, you're probably going to find it useless and unnecessarily complicated on the whole. You might however, find a thing or two you'll like. Read more in 3. (3.5. is my favourite bit.)
+// There's no guarantee whatsoever. If it doesn't do what you like, formats your drive or seduces your child, you can't blame me.
+
+// Note to British and Americans: No, there's no IPA here. IPA is ridiculously inconsequent, complicated and detailed in a degree verging on utter uselessness for any conceivable purpose whatsoever. I don't use it, I see no reason for anyone to use it, and I can't understand why you do use it after all. If you want a good phonetic transcription, go for UPA.
+
+
+
+// ### 2. How do I install it?
+// Drop it in /usr/share/X11/xkb/symbols and restart the X server (ctrl-alt-bckspace, or just reboot). It should be automatically detected.
+// If you use some fancy desktop environment, you might need to play with the files in /usr/share/X11/xkb/rules or probably something else, too. I don't know, sorry.
+
+// To turn it on, you can either issue "setxkbmap lng -variant <name of the variant here>" from the console or use whatever your desktop environment provides.
+
+
+
+// ### 3. How do I use it?
+// There are five layouts: basic (Latin), Arabic, Cyrillic, Greek and Hebrew. All are thoroughly Latin-based, i.e. with e.g. the "b" key you get: b, ب, б, β and ב.
+
+// The first part of the config, called "basic", is included in all the layouts. Essentially, it does seven things:
+// 1. It turns on lots of dead keys. All are available with RALT (= Right Alt) and assigned to keys they more or less look like, e.g. RALT-; + u = ü, RALT-- + u = ū. This works for different layouts: RALT-; + у = ӱ (Cyrillic), ῡ (Greek) &c.
+// 2. It turns on non-breaking spaces and en- and em-dashes with RALT and space and the equal (plus) key.
+// 3. It makes Shift-Bckspace work like Del.
+// 4. It makes the keypad work like PgUp, Home &c. – with and without Shift (with NumLock off, obviously).
+// 5. It turns Caps Lock into a regular Shift.
+// 6. Here's the fun bit: it changes the left modifier keys to a Mac-ish layout. You probably have LCTL-(Fn)-LWIN-LALT. If you've worked on a Mac for longer than a day, you should understand how illogical and uncomfortable this is. So, here goes: now you have LWIN-(Fn)-LALT-LCTL. You'll thank me later ;)
+// And joy oh joy, with the current definition you get to use your favourite keyboard shortcuts in all layouts, I mean you can still Ctrl-C and Ctrl-V things in Cyrillic, Arabic and everything else.
+// 7. And finally, it assigns the third level shift (access to the third and fourth columns) to RALT, and the Compose key (see my .XCompose) to RCTL.
+
+// The non-Latin layouts are, as I said, thoroughly Latin-based, i.e. you actually type the transcription. I'm not going to list them all here. You can read the config, it's pretty easy:
+// – <AB02> &c. reads as follows: A is not important; B is the second row on the keyboard from the bottom (i.e. zxc…), 02 is the second key from the left (x).
+// – {[ … ]};: the first column is a normal keypress, without any modifiers; the second is just Shift; the third is RALT (in my config, you can play with "level3(ralt_switch)", and the fourth is RALT-Shift.
+
+
+// ### 4. How do I adapt to my needs?
+// First things first, the license: it's GPL, or in other words if it doesn't do exactly what you need, just change whatever you please and do whatever you like with the modified version. Just credit me somewhere, please.
+// Should you need any help, I'll do my best to help you but I can't promise anything. You can contact me at kamil{-dot-}stachowski{-the-funny-little-sign-}gmail{-dot-}com.
+
+// The xkb config format is relatively clear. Different parts of the config are commented, so you should be able to find quite easily what you need to change or delete to get the functionality you need, or get rid of something you don't need.
+// There aren't too many tutorials on the web, or they don't really give you the information you need, or at least not in the form you could easily understand. This config is more a result of trial and error. I'm afraid trial and error is the best advice I can give you.
+// There's a little more information in 3.
+
+// If you start playing around with the config, you should remember that the first part, called "basic", is included in all layouts. If you modify anything in it, it will affect all of them at the same time.
+
+
+
+

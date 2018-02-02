@@ -1,0 +1,105 @@
+include "%L"
+
+<Multi_key> <c> <c>							: "ℂ"	U2102	# DOUBLE-STRUCK CAPITAL C
+<Multi_key> <Down> <2>						: "₂"	U2082	# SUBSCRIPT TWO
+<Multi_key> <2> <Down>						: "₂"	U2082	# SUBSCRIPT TWO
+
+<dead_macron> <d>							: "ḏ"	U1E0F	# LATIN SMALL LETTER D WITH LINE BELOW
+<dead_macron> <D>							: "Ḏ"	U1E0E	# LATIN CAPITAL LETTER D WITH LINE BELOW
+<dead_dotbelow> <g>							: "ġ"	U0121	# LATIN SMALL LETTER G WITH DOT ABOVE
+<dead_dotbelow> <G>							: "Ġ"	U0120	# LATIN CAPITAL LETTER G WITH DOT ABOVE
+<dead_breve> <h>							: "ḫ"	U1E2B	# LATIN SMALL LETTER H WITH BREVE BELOW
+<dead_breve> <H>							: "Ḫ"	U1E2A	# LATIN CAPITAL LETTER H WITH BREVE BELOW
+<dead_macron> <t>							: "ṯ"	U1E6F	# LATIN SMALL LETTER T WITH LINE BELOW
+<dead_macron> <T>							: "Ṯ"	U1E6E	# LATIN CAPITAL LETTER T WITH LINE BELOW
+
+<Multi_key> <parenleft> <parenleft>			: "ʿ"	U02BF	# MODIFIER LETTER LEFT HALF RING
+<Multi_key> <parenright> <parenright>		: "ʾ"	U02BF	# MODIFIER LETTER RIGHT HALF RING
+<Multi_key> <comma> <o>						: "ǫ"	U01EB	# LATIN SMALL LETTER O WITH OGONEK
+<Multi_key> <comma> <O>						: "Ǫ"	U01EA	# LATIN CAPITAL LETTER O WITH OGONEK
+<Multi_key> <d> <z>							: "ʒ"	U0292	# LATIN SMALL LETTER EZH
+<Multi_key> <D> <Z>							: "Ʒ"	U01B7	# LATIN CAPITAL LETTER EZH
+<Multi_key> <d> <dead_caron> <z>			: "ǯ"	U01EF	# LATIN SMALL LETTER EZH WITH CARON
+<Multi_key> <D> <dead_caron> <Z>			: "Ǯ"	U01EE	# LATIN CAPITAL LETTER EZH WITH CARON
+<Multi_key> <g> <h>							: "γ"	U03B3	# GREEK SMALL LETTER GAMMA
+<Multi_key> <G> <H>							: "Γ"	U0393	# GREEK CAPITAL LETTER GAMMA
+<Multi_key> <h> <h>							: "ɦ"	U0266	# LATIN SMALL LETTER H WITH HOOK
+<Multi_key> <H> <H>							: "Ɦ"	UA7AA	# LATIN CAPITAL LETTER H WITH HOOK
+<Multi_key> <i> <i>							: "i̯"
+<Multi_key> <i> <j>							: "ĳ"	U0133	# LATIN SMALL LIGATURE IJ
+<Multi_key> <I> <J>							: "Ĳ"	U0132	# LATIN CAPITAL LIGATURE IJ
+<Multi_key> <k> <h>							: "χ"	U03C7	# GREEK SMALL LETTER CHI
+<Multi_key> <K> <H>							: "Χ"	U03A7	# GREEK CAPITAL LETTER CHI
+<Multi_key> <s> <s>							: "ſ"	U017F	# LATIN SMALL LETTER LONG S
+<Multi_key> <s> <z>							: "ß"	U00DF	# LATIN SMALL LETTER SHARP S
+<Multi_key> <S> <Z>							: "ẞ"	U1E9E	# LATIN CAPITAL LETTER SHARP S
+<Multi_key> <u> <u>							: "u̯"
+<Multi_key> <comma> <z>						: "ż"	U017C
+<Multi_key> <comma> <Z>						: "Ż"	U017B
+
+<Multi_key> <equal> <Cyrillic_ghe>			: "ғ"	U0492	# CYRILLIC SMALL LETTER GHE WITH STROKE
+<Multi_key> <equal> <Cyrillic_GHE>			: "Ғ"	U0493	# CYRILLIC CAPITAL LETTER GHE WITH STROKE
+<Multi_key> <comma> <Cyrillic_zhe>			: "җ"	U0497	# CYRILLIC SMALL LETTER ZHE WITH DESCENDER
+<Multi_key> <comma> <Cyrillic_ZHE>			: "Җ"	U0496	# CYRILLIC CAPITAL LETTER ZHE WITH DESCENDER
+<Multi_key> <Cyrillic_de> <Cyrillic_ze>		: "џ"	U045F	# CYRILLIC SMALL LETTER DZHE
+<Multi_key> <Cyrillic_DE> <Cyrillic_ZE>		: "Џ"	U040F	# CYRILLIC CAPITAL LETTER DZHE
+<Multi_key> <Cyrillic_ghe> <Cyrillic_ha>	: "ҕ"	U0495	# CYRILLIC SMALL LETTER GHE WITH MIDDLE HOOK
+<Multi_key> <Cyrillic_GHE> <Cyrillic_HA>	: "Ҕ"	U0494	# CYRILLIC CAPITAL LETTER GHE WITH MIDDLE HOOK
+<Multi_key> <Cyrillic_ie> <Cyrillic_ie>		: "ә"	U04D9	# CYRILLIC SMALL LETTER SCHWA
+<Multi_key> <Cyrillic_IE> <Cyrillic_IE>		: "Ә"	U04D8	# CYRILLIC CAPITAL LETTER SCHWA
+<Multi_key> <Cyrillic_i> <Cyrillic_i>		: "ѣ"	U0463	# CYRILLIC SMALL LETTER YAT'
+<Multi_key> <Cyrillic_I> <Cyrillic_I>		: "Ѣ"	U0462	# CYRILLIC CAPITAL LETTER YAT'
+<Multi_key> <Cyrillic_i> <Cyrillic_o>		: "ё"	U0451	# CYRILLIC SMALL LETTER IO
+<Multi_key> <Cyrillic_I> <Cyrillic_O>		: "Ё"	U0401	# CYRILLIC CAPITAL LETTER IO
+<Multi_key> <Cyrillic_shorti> <Cyrillic_o>	: "ё"	U0451	# CYRILLIC SMALL LETTER IO
+<Multi_key> <Cyrillic_SHORTI> <Cyrillic_O>	: "Ё"	U0401	# CYRILLIC CAPITAL LETTER IO
+<Multi_key> <comma> <Cyrillic_KA>			: "Қ"	U049A	# CYRILLIC CAPITAL LETTER KA WITH DESCENDER
+<Multi_key> <comma> <Cyrillic_ka>			: "қ"	U049B	# CYRILLIC SMALL LETTER KA WITH DESCENDER
+<Multi_key> <Cyrillic_el> <Cyrillic_softsign>	: "љ"	U0459	# CYRILLIC SMALL LETTER LJE
+<Multi_key> <Cyrillic_EL> <Cyrillic_softsign>	: "Љ"	U0409	# CYRILLIC CAPITAL LETTER LJE
+<Multi_key> <comma> <Cyrillic_EN>			: "Ң"	U04A2	# CYRILLIC CAPITAL LETTER EN WITH DESCENDER
+<Multi_key> <comma> <Cyrillic_en>			: "ң"	U04A3	# CYRILLIC SMALL LETTER EN WITH DESCENDER
+<Multi_key> <Cyrillic_en> <Cyrillic_ghe>	: "ҥ"	U04A5	# CYRILLIC SMALL LIGATURE EN GHE
+<Multi_key> <Cyrillic_EN> <Cyrillic_GHE>	: "Ҥ"	U04A4	# CYRILLIC CAPITAL LIGATURE EN GHE
+<Multi_key> <Cyrillic_en> <Cyrillic_softsign>	: "њ"	U045A	# CYRILLIC SMALL LETTER NJE
+<Multi_key> <Cyrillic_EN> <Cyrillic_softsign>	: "Њ"	U040A	# CYRILLIC CAPITAL LETTER NJE
+<Multi_key> <equal> <Cyrillic_o>			: "ө"	U04E9	# CYRILLIC SMALL LETTER BARRED O
+<Multi_key> <equal> <Cyrillic_O>			: "Ө"	U04E8	# CYRILLIC CAPITAL LETTER BARRED O
+<Multi_key> <Cyrillic_i> <Cyrillic_u>		: "ю"	U044E	# CYRILLIC SMALL LETTER YU
+<Multi_key> <Cyrillic_I> <Cyrillic_U>		: "Ю"	U042E	# CYRILLIC CAPITAL LETTER YU
+<Multi_key> <Cyrillic_shorti> <Cyrillic_u>	: "ю"	U044E	# CYRILLIC SMALL LETTER YU
+<Multi_key> <Cyrillic_SHORTI> <Cyrillic_U>	: "Ю"	U042E	# CYRILLIC CAPITAL LETTER YU
+<Multi_key> <comma> <Cyrillic_HA>			: "Ҳ"	U04B2	# CYRILLIC CAPITAL LETTER HA WITH DESCENDER
+<Multi_key> <comma> <Cyrillic_ha>			: "ҳ"	U04B3	# CYRILLIC SMALL LETTER HA WITH DESCENDER
+<Multi_key> <Cyrillic_i> <Cyrillic_a>		: "я"	U044F	# CYRILLIC SMALL LETTER YA
+<Multi_key> <Cyrillic_I> <Cyrillic_A>		: "Я"	U042F	# CYRILLIC CAPITAL LETTER YA
+<Multi_key> <Cyrillic_shorti> <Cyrillic_a>	: "я"	U044F	# CYRILLIC SMALL LETTER YA
+<Multi_key> <Cyrillic_SHORTI> <Cyrillic_A>	: "Я"	U042F	# CYRILLIC CAPITAL LETTER YA
+
+<Multi_key> <Greek_kappa> <Greek_sigma>		: "ξ"	U03BE	# GREEK SMALL LETTER XI
+<Multi_key> <Greek_KAPPA> <Greek_SIGMA>		: "Ξ"	U039E	# GREEK CAPITAL LETTER XI
+<Multi_key> <Greek_pi> <Greek_sigma>		: "ψ"	U03C8	# GREEK SMALL LETTER PSI
+<Multi_key> <Greek_PI> <Greek_SIGMA>		: "Ψ"	U03A8	# GREEK CAPITAL LETTER PSI
+
+<Multi_key> <Arabic_noon> <Arabic_gaf>		: "ڭ"	UFBD3	# ARABIC LETTER NG ISOLATED FORM
+
+<Multi_key> <period> <period>				: "…"	U2026	# HORIZONTAL ELLIPSIS
+<Multi_key> <6> <6>							: "‘"	U2018	# LEFT SINGLE QUOTATION MARK
+<Multi_key> <9> <9>							: "’"	U2019	# RIGHT SINGLE QUOTATION MARK
+<Multi_key> <6> <u>							: "“"	U201C	# LEFT DOUBLE QUOTATION MARK
+<Multi_key> <9> <d>							: "„"	U201E	# DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <9> <u>							: "”"	U201D	# RIGHT DOUBLE QUOTATION MARK
+<Multi_key> <n> <o>							: "№"	U2116	# NUMERO SIGN
+<Multi_key> <t> <t>							: "†"	U2020	# DAGGER
+<Multi_key> <T> <T>							: "‡"	U2021	# DOUBLE DAGGER
+<Multi_key> <Left> <Left>					: "←"	U2190	# LEFTWARDS ARROW
+<Multi_key> <Right> <Right>					: "→"	U2192	# RIGHTWARDS ARROW
+<Multi_key> <Up> <Up>						: "↑"	U2191	# UPWARDS ARROW
+<Multi_key> <Down> <Down>					: "↓"	U2193	# DOWNWARDS ARROW
+<Multi_key> <tilde> <tilde>					: "≈"	U2248	# ALMOST EQUAL TO
+<Multi_key> <p> <p>							: "¶"	U00B6	# PILCROW SIGN
+<Multi_key> <comma> <period>				: "‹›"
+
+
+<Multi_key> <k> <s>							: "Kamil Stachowski"
+<Multi_key> <2> <2>							: "kamil.stachowski@gmail.com"

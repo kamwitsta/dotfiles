@@ -1,0 +1,66 @@
+### SETTINGS
+
+# ignore history duplicates and spaces
+export HISTCONTROL=ignoreboth
+
+# add msort, cabal and python to path
+export PATH=$PATH:/home/kamil/conf/msort
+export PATH=$PATH:/home/kamil/.cabal/bin
+export PYTHONPATH=$PYTHONPATH:/home/kamil/python
+
+# nice prompt
+PS1="\n\w \[\033[0;32m\]$\[\033[0m\] "
+
+# completion
+if [ -f /etc/bash_completion ]; then
+	. /etc/bash_completion
+fi
+
+# free ctrl-s for use in Vim
+stty -ixon -ixoff
+
+# java a tiny bit less annoying
+export JAVA_OPTIONS="-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+
+
+### LOOK
+
+colBgNormal="#252a33"
+colFgFocus="#d18a75"
+colFgNormal="#d7dbe2"
+colFgUnimp="#6f7e98"
+colFgUrgent="#bf6971"
+fontNormal="-*-dax-light-r-normal-*-17-*-*-*-p-*-iso8859-1"
+# fontNormal="-*-helvetica-medium-r-normal-*-17-*-*-*-p-*-iso8859-1"
+
+alias dzen='dzen -bg $colBgNormal -fg $colFgNormal '
+
+
+### USABILITY
+
+# some aliases
+function agrep() { grep $1 *; }
+alias cal='cal -m'					# -m: monday's the first day
+alias emacs='emacs -nw'				# the terminal version
+alias grep='grep --color=auto -i'	# -i: case-insensitive
+alias grepr='grep -r --include'		# -r: recursive; --include \*.tex
+alias locate='locate -i'			# -i: case-insensitive
+alias ls='ls --color=auto -C'		# -C: columns
+alias nano='nano -c'				# -c: line numbers
+alias open='gnome-open'
+alias pf='ps -o user,pid,ppid,command -ax | grep'
+alias rm="rm -i"					# silly, silly me
+alias updatedb='sudo updatedb'
+# alias vim="/home/kamil/src/vim/bin/vim -p"	# open multiple files in tabs
+alias vimdiff="/home/kamil/src/vim/bin/vimdiff"
+alias wifi-scan='sudo iwlist wlan0 scanning | /bin/grep "Cell\|Quality\|Encryption\|ESSID"'
+
+# defaults
+export BROWSER=/usr/bin/chromium
+export EDITOR=/usr/bin/vim
+# export PAGER=/usr/bin/vimpager && alias less=$PAGER
+# export TERM='xterm-256color'
+
+# debian specific
+alias aptitude='sudo aptitude'
+alias aptup='aptitude update && aptitude full-upgrade'
