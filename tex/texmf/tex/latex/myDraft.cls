@@ -54,9 +54,9 @@
 	\def\cSpread{1.1}
 }
 \DeclareOption{widemargin}{
-	\def\cArticle{a4paper,12pt}
+	\def\cArticle{a4paper,11pt}
 	\def\cClass{article}
-	\def\cGeometry{margin=1.5cm,bmargin=2.5cm,rmargin=7cm,marginparwidth=5cm,marginparsep=1cm}
+	\def\cGeometry{margin=1.5cm,bmargin=2.5cm,rmargin=5cm,marginparwidth=5cm,marginparsep=1cm}
 	\def\cLists{leftmargin=*,noitemsep}
 	\def\cParindent{.5cm}
 	\def\cQuoting{leftmargin=\cParindent,rightmargin=\cParindent,vskip=\medskipamount}

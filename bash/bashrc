@@ -4,7 +4,7 @@
 export HISTCONTROL=ignoreboth
 
 # add msort, cabal and python to path
-export PATH=$PATH:/home/kamil/conf/msort
+export PATH=$PATH:/home/kamil/devel/hs/lsort
 export PATH=$PATH:/home/kamil/.cabal/bin
 export PYTHONPATH=$PYTHONPATH:/home/kamil/python
 

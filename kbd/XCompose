@@ -30,6 +30,8 @@ include "%L"
 <Multi_key> <I> <J>							: "Ĳ"	U0132	# LATIN CAPITAL LIGATURE IJ
 <Multi_key> <k> <h>							: "χ"	U03C7	# GREEK SMALL LETTER CHI
 <Multi_key> <K> <H>							: "Χ"	U03A7	# GREEK CAPITAL LETTER CHI
+<Multi_key> <O> <O>							: "Ɔ"	U0186	# LATIN CAPITAL LETTER OPEN O
+<Multi_key> <o> <o>							: "ɔ"	U0254	# LATIN SMALL LETTER OPEN O
 <Multi_key> <s> <s>							: "ſ"	U017F	# LATIN SMALL LETTER LONG S
 <Multi_key> <s> <z>							: "ß"	U00DF	# LATIN SMALL LETTER SHARP S
 <Multi_key> <S> <Z>							: "ẞ"	U1E9E	# LATIN CAPITAL LETTER SHARP S

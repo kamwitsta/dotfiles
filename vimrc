@@ -9,18 +9,14 @@ call plug#begin ('~/.vim/plugged')
 Plug 'AlessandroYorba/Despacio'
 Plug 'arcticicestudio/nord-vim'
 Plug 'djmoch/vim-makejob'
-" Plug 'garbas/vim-snipmate'
-" Plug 'honza/vim-snippets'					" recommended by garbas/vin-snipmate
-" Plug 'MarcWeber/vim-addon-mw-utils'			" required by garbas/vim-snipmate
-" Plug 'tomtom/tlib_vim'						" required by garbas/vim-snipmate
 Plug 'itchyny/lightline.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-geek/largefile.vim'
 
-Plug 'kamwitsta/commentToggle'
+" Plug 'kamwitsta/commentToggle'
 Plug 'kamwitsta/dutch_peasants'
 Plug 'kamwitsta/nordisk'
-" Plug '~/devel/vim/commentToggle', {'branch': 'develop'}
+Plug '~/devel/vim/commentToggle', {'branch': 'develop'}
 " Plug '~/devel/vim/kolorki/nordisk', {'branch': 'develop'}
 Plug '~/devel/vim/tex_alt/'
 	let g:tex_flavour = "xelatex"
@@ -129,7 +125,7 @@ filetype indent on		"	and indent rules
 syntax enable
 syntax sync minlines=100 maxlines=500	" speed up highlighting
 
-" highlight wrong whitespace (trailing, spaces before tabs and multiple spaces)
+" highlight incorrect whitespace (trailing, spaces before tabs and multiple spaces)
 if &modifiable && &ft!="csv" && &ft!="haskell"		" unless vimpager, csv or haskell
 	match Error "[[:space:]]\+$\| \t\|\t \| \{2,}"
 	set fileencoding=utf-8
