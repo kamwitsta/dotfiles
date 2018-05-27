@@ -2,6 +2,7 @@ import qualified XMonad.StackSet as W
 
 import System.IO (hPutStrLn)
 import XMonad
+import XMonad.Config.Desktop
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.ManageDocks
@@ -15,7 +16,7 @@ import XMonad.Util.Run (spawnPipe)
 
 main = do
 	statBarPipe <- spawnPipe myStateBar
-	xmonad $ ewmh defaultConfig		-- fix LibreOffice dialogs
+	xmonad $ ewmh desktopConfig		-- fix LibreOffice dialogs, and cooperation with dzen
 		{ -- hooks
 		  layoutHook	= myLayoutHook
 		, logHook		= dynamicLogWithPP $ myStateBarPP statBarPipe
@@ -42,7 +43,7 @@ myImgViewer		= "gthumb"
 myPdfViewer		= "evince"
 myRunner		= "dmenu_run -b -nb '"++ myColBgNormal ++ "' -nf '" ++ myColFgNormal ++ "' -fn '" ++ myFont ++ "' -p '$'"
 myRunnerRoot	= "sudo dmenu_run -b -nb '"++ myColBgNormal ++ "' -nf '" ++ myColFgNormal ++ "' -sb '" ++ myColFgUrgent ++ "' -fn '" ++ myFont ++ "' -p '#'"
-myStateBar		= "dzen2 -bg '" ++ myColBgNormal ++ "' -fn '" ++ myFont ++ "' -ta l -w 720 -h 24"
+myStateBar		= "dzen2 -bg '" ++ myColBgNormal ++ "' -fn '" ++ myFont ++ "' -ta l -w 960 -h 24 -dock"
 myTerminal		= "dbus-launch gnome-terminal"
 myTextEditor	= "libreoffice"
 -- look
@@ -51,9 +52,9 @@ myColFgFocus	= "#d18a75"
 myColFgNormal	= "#d7dbe2"
 myColFgUnimp	= "#6f7e98"
 myColFgUrgent	= "#bf6971"
-myFont			= "-*-dax-light-r-normal-*-17-*-*-*-p-*-iso8859-1"
--- myFont			= "-*-helvetica-medium-r-normal-*-17-*-*-*-p-*-iso8859-1"
-
+--  myFont			= "-*-dax-light-r-normal-*-17-*-*-*-p-*-iso8859-1"
+--  myFont			= "-adobe-source code pro for powerline-medium-r-normal-*-17-*-*-*-n-*-iso8859-1"
+myFont			= "-monotype-cousine for powerline-medium-r-normal-*-17-*-*-*-p-*-iso8859-1"
 
 
 -- config
@@ -119,4 +120,3 @@ myStateBarPP handle = defaultPP
 
 doSink :: ManageHook
 doSink = ask >>= \w -> liftX (reveal w) >> doF (W.sink w)
-

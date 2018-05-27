@@ -1,1 +1,36 @@
-/home/kamil/devel/vim/kolorki/nordisk/.Xdefaults
+! special
+*.foreground:   #d7dbe2
+*.background:   #252a33
+*.cursorColor:  #d7dbe2
+
+! black
+*.color0:       #252a33
+*.color8:       #38404d
+
+! red
+*.color1:       #bf6971
+*.color9:       #d18a75
+
+! green
+*.color2:       #a3be8c
+*.color10:      #88c0d0
+
+! yellow
+*.color3:       #eccf95
+*.color11:      #8fbcbb
+
+! blue
+*.color4:       #5e81ac
+*.color12:      #b48ead
+
+! magenta
+*.color5:       #6f7e98
+*.color13:      #d7dbe2
+
+! cyan
+*.color6:       #81a1c1
+*.color14:      #ffffff
+
+! white
+*.color7:       #4a5466
+*.color15:      #5e6b81

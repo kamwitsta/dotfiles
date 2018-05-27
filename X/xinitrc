@@ -7,10 +7,7 @@ xgamma -gamma 0.8 &
 #export vblank_mode=0 &
 
 # background
-feh --bg-scale /home/kamil/.wallpaper.jpg &
-
-# dropbox
-dropbox start &
+feh --bg-scale /home/kamil/.wallpaper.png &
 
 # dzen
 ~/.dzen/dzen.sh &
@@ -18,17 +15,8 @@ dropbox start &
 
 ### USABILITY
 
-# disable touchpad when typing
-syndaemon -i 1 -t &
-
 # sound off
 amixer -q set Master off &
-
-# notifications
-#/usr/lib/notification-daemon-1.0/notification-daemon &
-
-# SyncTex
-#/home/kamil/conf/scripts/sync-evince2vim.zsh &
 
 # compose key
 export GTK_IM_MODULE=uim
@@ -38,7 +26,7 @@ im-config -n uim
 
 ### APPS
 
-clipit --no-icon &
+clipit &
 
 export SAL_USE_VCLPLUGIN=gtk	# fix OO focus issues
 

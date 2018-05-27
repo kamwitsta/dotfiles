@@ -30,10 +30,10 @@ colFgFocus="#d18a75"
 colFgNormal="#d7dbe2"
 colFgUnimp="#6f7e98"
 colFgUrgent="#bf6971"
-fontNormal="-*-dax-light-r-normal-*-17-*-*-*-p-*-iso8859-1"
-# fontNormal="-*-helvetica-medium-r-normal-*-17-*-*-*-p-*-iso8859-1"
+fontNormal="-monotype-cousine for powerline-medium-r-normal-*-17-*-*-*-p-*-iso8859-1"
+# fontNormal="-adobe-source code pro light-light-r-normal-*-17-*-*-*-n-*-iso8859-1"
 
-alias dzen='dzen -bg $colBgNormal -fg $colFgNormal '
+alias dzen='dzen2 -bg $colBgNormal -fg $colFgNormal '
 
 
 ### USABILITY

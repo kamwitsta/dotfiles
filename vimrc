@@ -15,11 +15,10 @@ Plug 'vim-geek/largefile.vim'
 
 " Plug 'kamwitsta/commentToggle'
 Plug 'kamwitsta/dutch_peasants'
-Plug 'kamwitsta/nordisk'
-Plug '~/devel/vim/commentToggle', {'branch': 'develop'}
-" Plug '~/devel/vim/kolorki/nordisk', {'branch': 'develop'}
-Plug '~/devel/vim/tex_alt/'
-	let g:tex_flavour = "xelatex"
+Plug '/home/kamil/devel/vim/commentToggle', {'branch': 'develop'}
+Plug '/home/kamil/devel/vim/kolorki/nordisk', {'branch': 'develop'}
+Plug '/home/kamil/devel/vim/tex_alt/'
+	le/home/kamil g:tex_flavour = "xelatex"
 call plug#end ()
 
 
@@ -112,7 +111,7 @@ set termguicolors		" enable truecolor
 set termencoding=utf-8
 set textwidth=0			" don't automatically break paragraphs
 set undofile			" persistent undo
-set undodir=~/.tmp-vim
+set undodir=~/.vimundodir
 set vb t_vb=			" turn off beep
 set virtualedit=		" don't select tabs as if composed of many spaces
 set whichwrap+=<,>		" move with arrows through wrapped lines

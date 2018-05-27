@@ -45,7 +45,7 @@ function clockUpdate {
 
 dateIval=300
 function dateUpdate {
-	date="`date +\"%m.%d.\"`"
+	date="`date +\"%a %d.%m.%Y\"`"
 }
 
 # --------------------------------------------------------------------------------------
@@ -82,4 +82,4 @@ while true; do
 
 	echo "${batt}${separator}${date}${separator}${revDec}${separator}${clock}"
 	sleep $interval
-done | dzen2 -bg "$colBgNormal" -fg "$colFgUnimp" -fn "$fontNormal" -ta r -w 720 -x 720 -h 24
+done | dzen2 -bg "$colBgNormal" -fg "$colFgUnimp" -fn "$fontNormal" -ta r -w 960 -x 960 -h 24

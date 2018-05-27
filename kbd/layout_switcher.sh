@@ -19,6 +19,6 @@ case "$1" in
 			fi
 			;;
 	*)
-			echo "$0: unknown argument(s) \"$@\"" | dzen -p 10
+			echo "$0: unknown argument(s) \"$@\"" | dzen2 -p 10
 			;;
 esac
